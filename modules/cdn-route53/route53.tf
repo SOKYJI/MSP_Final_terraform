@@ -11,8 +11,8 @@ resource "aws_route53_record" "ecs_web" {
   type    = "A" # A 레코드로 설정
 
   alias {
-    name                   = aws_cloudfront_distribution.cdn-app-alb-distribution.domain_name
-    zone_id                = aws_cloudfront_distribution.cdn-app-alb-distribution.hosted_zone_id
+    name                   = data.aws_lb.web_elb.dns_name
+    zone_id                = data.aws_lb.web_elb.zone_id
     evaluate_target_health = true
   }
 }
