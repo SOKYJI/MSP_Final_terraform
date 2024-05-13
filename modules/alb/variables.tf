@@ -1,0 +1,13 @@
+#variable "web-alb-sg-name" {}
+variable "public-subnet-name1" {}
+variable "public-subnet-name2" {}
+variable "app-private-subnet-name1" {}
+variable "app-private-subnet-name2" {}
+variable "vpc-name" {}
+variable "web-alb-name" {}
+variable "web-alb-sg-name" {}
+variable "web-tg-name" {}
+variable "app-alb-name" {}
+variable "app-alb-sg-name" {}
+variable "app-tg-name" {}
+variable "acm-certs-arn" {}
